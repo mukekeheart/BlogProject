@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .custom_site import custom_site
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('super_admin/', admin.site.urls),
+    path('admin/', custom_site.urls),
     path('blog/', include('app_blog.urls')),
     path('config/', include('app_config.urls')),
     path('comment/', include('app_comment.urls')),

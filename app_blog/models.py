@@ -6,7 +6,6 @@ from django.contrib.auth.models import User
 
 # 用户模型 用Django自带的 User
 
-
 # 分类模型
 class Category(models.Model):
     STATUS_NORMAL = 1
